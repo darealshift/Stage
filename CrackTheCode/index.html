@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Crack The Code</title>
+<style type="text/css">
+      Lock{display: block;}Check{margin-top: 315px;left:calc(86px * -3);}Next{top:2px;}P{bottom:0px;position:absolute;}
+      Check,Next{height: 60px;background-color: #999;width: calc((86px * 3) - 6px);font-size: 50px;text-align: center;position:relative;}
+      Wheel,Number,Check,Next{display: block;border: 3px solid black;float: left;}Wheel{width: 80px;background-color: black;text-align: center;height:306px;}
+      Arrow{border: 3px solid chocolate;border-width: 0 3px 3px 0;padding: 25px;display: inline-block;position:relative;}
+      Number{height:60px;font-size: 50px;position: relative;width: inherit;display: inline-block;border-left: 0px;border-right: 0px;}
+      .selected{background-color: #999;border-color: chocolate;}.correct{background-color: green;}
+      .top{border-bottom: 0px;background-image: linear-gradient(black, #999);}.bottom{border-top:0px;background-image: linear-gradient(#999, black);}
+      .up{top:13px;transform: rotate(-135deg);-webkit-transform: rotate(-135deg);}.down{bottom: 13px;transform: rotate(45deg);-webkit-transform: rotate(45deg);}
+    </style>
+</head>
+<body>
+<Lock>
+<Wheel>
+<Arrow class='up' onclick='window.location.href=`index.php?Lock=UP&Wheel=1`;'></Arrow>
+<Number class='top'>0</Number>
+<Number class='selected'>1</Number>
+<Number class='bottom'>2</Number>
+<Arrow class='down' onclick='window.location.href=`index.php?Lock=DOWN&Wheel=1`;'></Arrow>
+</Wheel>
+<Wheel>
+<Arrow class='up' onclick='window.location.href=`index.php?Lock=UP&Wheel=2`;'></Arrow>
+<Number class='top'>8</Number>
+<Number class='selected'>9</Number>
+<Number class='bottom'>0</Number>
+<Arrow class='down' onclick='window.location.href=`index.php?Lock=DOWN&Wheel=2`;'></Arrow>
+</Wheel>
+<Wheel>
+<Arrow class='up' onclick='window.location.href=`index.php?Lock=UP&Wheel=3`;'></Arrow>
+<Number class='top'>4</Number>
+<Number class='selected'>5</Number>
+<Number class='bottom'>6</Number>
+<Arrow class='down' onclick='window.location.href=`index.php?Lock=DOWN&Wheel=3`;'></Arrow>
+</Wheel>
+<Check onclick='window.location.href=`index.php?check=`;'>check</Check>
+</Lock>
+<Code style='display:none;'>195</Code>
+<P><a href="index.php?reset=">Reset Game</a></P>
+</body>
+</html>
