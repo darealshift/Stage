@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "titel titel"
+        "header header"
+        "mainmenu mainmenu"
+        "sidebar content"
+        "footer footer"
+        ;
+}
+
+.grid div:nth-child(even) {
+    background: orange;
+}
+
+.grid div:nth-child(odd) {
+    background: blue;
+}
+
+.titel {
+    grid-area: titel;
+}
+
+.header {
+    grid-area: header;
+}
+
+.mainmenu {
+    grid-area: mainmenu;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
